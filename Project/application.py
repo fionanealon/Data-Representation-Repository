@@ -3,12 +3,12 @@ from stationDAO import stationDAO
 
 app = Flask(__name__, static_url_path='', static_folder='.')
 
-fuel_stations=[
-    { "id":1, "station_name":"PG&E - New York City", "fuel_type_code":"CNG", "zip":"85126"},
-    { "id":2, "station_name":"PG&E - Raleigh", "fuel_type_code":"ELEC", "zip":"83611",},
-    { "id":3, "station_name":"Hilton - Charleston", "fuel_type_code":"LNG", "zip":"81911"}
-]
-nextId=4
+#fuel_stations=[
+#    { "id":1, "station_name":"PG&E - New York City", "fuel_type_code":"CNG", "zip":"85126"},
+#    { "id":2, "station_name":"PG&E - Raleigh", "fuel_type_code":"ELEC", "zip":"83611",},
+#    { "id":3, "station_name":"Hilton - Charleston", "fuel_type_code":"LNG", "zip":"81911"}
+#]
+#nextId=4
 
 # curl "http://127.0.0.1:5000/fuel_stations"
 @app.route('/fuel_stations')
